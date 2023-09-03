@@ -276,7 +276,7 @@ a{
 
 .stats{
     background-color: var(--main-color);
-
+    background-image: url('../assests/images/pattern.png');
 }
 
 .stats .container{
