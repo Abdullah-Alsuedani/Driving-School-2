@@ -516,7 +516,7 @@ a{
     padding-top: 150px;
     padding-bottom: 150px;
     background-color: var(--main-color);
-    background-image: url('/assests/images/pattern.png');
+    background-image: url('../assests/images/pattern.png');
 }
 
 
@@ -634,7 +634,7 @@ a{
 .footer{
     padding: 5px;
     background-color: #02030B;
-    background-image: url('/assests/images/pattern.png');
+    background-image: url('../assests/images/pattern.png');
 }
 
 .footer .container{
