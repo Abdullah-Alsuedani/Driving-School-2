@@ -56,7 +56,7 @@ a{
     color: var(--secondary-color);
 }
 
-.nav-item:first-of-type a{
+.nav-item.active a{
     color: var(--main-color);
 }
 
@@ -115,11 +115,7 @@ a{
 }
 
 .header-section .container-fluid{
-    gap: 50px;
-}
-
-.header-section .navbar-nav{
-    gap: 10px;
+    gap: 30px;
 }
 
 @media (max-width: 992px) {    
@@ -281,7 +277,7 @@ a{
 
 .stats .container{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     color: var(--light-color);
     padding-top: 35px;
     padding-bottom: 35px;
@@ -602,12 +598,8 @@ a{
     display: flex;
     justify-content: space-between;
     gap: 30px;
-}
-
-@media (max-width:992px) {
-    #contact-us form{
-        flex-wrap: wrap;
-    }
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 #contact-us form input:not(:last-child), 
@@ -743,4 +735,64 @@ a{
 
 .footer .copyright span{
     color: var(--main-color);
+}
+
+.faqs{
+    width: 100%;
+    padding: 230px 0 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.faqs .question-container{
+    border-top: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.faqs .question-container h4{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.faqs .question-container h4 img{
+    transition: 0.3s all;
+}
+
+.faqs .question-container .desc{
+    overflow: hidden;
+}
+
+.faqs .question-container p{
+    padding: 0 10px;
+    font-size: 15px;
+    color: var(--green-color);
+    line-height: 1.6;
+    margin-top: -100%;
+    display: block;
+    transition: 0.3s all;
+}
+.faqs .question-container.active p{
+    margin-top: 0;
+}
+
+.faqs .question-container.active h4 img{
+    transform: rotate(180deg);
+}
+
+.contact-p{
+    margin-top: 20px;
+    text-align: center;
+    color: var(--green-color);
+}
+
+.contact-p a{
+    color: var(--main-color);
+    text-decoration: none;
 }

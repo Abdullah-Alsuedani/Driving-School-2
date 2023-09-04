@@ -1,6 +1,6 @@
 
 let stats = document.querySelector('.stats')
-let countElement = document.querySelectorAll('.statsElement h4')
+let countElement = document.querySelectorAll('.statsElement h4 span')
 
 let started = false;
 
@@ -23,3 +23,4 @@ window.onscroll = function () {
        started = true;
     }
 }
+
