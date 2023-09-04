@@ -596,7 +596,6 @@ a{
 
 #contact-us form{
     display: flex;
-    justify-content: space-between;
     gap: 30px;
     flex-wrap: wrap;
     justify-content: center;
